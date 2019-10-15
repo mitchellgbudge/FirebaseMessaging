@@ -2,35 +2,29 @@
 //  MessageDetailViewController.swift
 //  Message Board
 //
-//  Created by Spencer Curtis on 8/7/18.
-//  Copyright © 2018 Lambda School. All rights reserved.
+//  Created by Mitchell Budge on 10/15/19.
+//  Copyright © 2019 Lambda School. All rights reserved.
 //
 
 import UIKit
 
 class MessageDetailViewController: UIViewController {
 
-    // MARK: - Properties
-    
-    var messageThreadController: MessageThreadController?
-    var messageThread: MessageThread?
-    
-    @IBOutlet weak var senderNameTextField: UITextField!
-    @IBOutlet weak var messageTextView: UITextView!
+    override func viewDidLoad() {
+        super.viewDidLoad()
 
-    // MARK: - Actions
-    
-    @IBAction func sendMessage(_ sender: Any) {
-        
-        guard let senderName = senderNameTextField.text,
-            let messageText = messageTextView.text,
-            let messageThread = messageThread else { return }
-        
-        messageThreadController?.createMessage(in: messageThread, withText: messageText, sender: senderName, completion: {
-            DispatchQueue.main.async {
-                self.navigationController?.popViewController(animated: true)
-            }
-        })
+        // Do any additional setup after loading the view.
     }
+    
+
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
+    }
+    */
 
 }

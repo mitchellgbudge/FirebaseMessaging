@@ -68,11 +68,11 @@ class MessageThreadController {
         }.resume()
     }
     
-    func createMessage(in messageThread: MessageThread, withText text: String, sender: String, completion: @escaping () -> Void) {
+    func createMessage(in messageThread: MessageThread, withText text: String, sender: Sender, completion: @escaping () -> Void) {
         
         guard let index = messageThreads.index(of: messageThread) else { completion(); return }
         
-        let message = MessageThread.Message(text: text, displayName: sender)
+        let message = MessageThread.Message(text: text, sender: sender)
         
         messageThreads[index].messages.append(message)
         
