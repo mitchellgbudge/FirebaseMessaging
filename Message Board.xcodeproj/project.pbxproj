@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3D16560C23561D7B00B1364D /* InputBarAccessoryView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D16560B23561D7B00B1364D /* InputBarAccessoryView.framework */; };
-		3D16560D23561D7B00B1364D /* InputBarAccessoryView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3D16560B23561D7B00B1364D /* InputBarAccessoryView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		3D16561023561D7D00B1364D /* MessageKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D16560F23561D7D00B1364D /* MessageKit.framework */; };
-		3D16561123561D7D00B1364D /* MessageKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3D16560F23561D7D00B1364D /* MessageKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		3D1656142356275500B1364D /* MessageDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1656132356275500B1364D /* MessageDetailViewController.swift */; };
-		3D165616235627F400B1364D /* Sender+UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D165615235627F400B1364D /* Sender+UserDefaults.swift */; };
+		38CCC29823561CFE00EF39BA /* MessageKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38CCC29623561CFE00EF39BA /* MessageKit.framework */; };
+		38CCC29923561CFE00EF39BA /* MessageKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 38CCC29623561CFE00EF39BA /* MessageKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		38CCC29A23561CFE00EF39BA /* InputBarAccessoryView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38CCC29723561CFE00EF39BA /* InputBarAccessoryView.framework */; };
+		38CCC29B23561CFE00EF39BA /* InputBarAccessoryView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 38CCC29723561CFE00EF39BA /* InputBarAccessoryView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		38CCC29F2356275200EF39BA /* MessageDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CCC29E2356275200EF39BA /* MessageDetailViewController.swift */; };
+		38CCC2A1235627F500EF39BA /* Sender+UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CCC2A0235627F500EF39BA /* Sender+UserDefaults.swift */; };
 		4612B5C8211AB41100E7FF73 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4612B5C7211AB41100E7FF73 /* AppDelegate.swift */; };
 		4612B5CD211AB41200E7FF73 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4612B5CB211AB41200E7FF73 /* Main.storyboard */; };
 		4612B5CF211AB41300E7FF73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4612B5CE211AB41300E7FF73 /* Assets.xcassets */; };
@@ -24,14 +24,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		3D16560E23561D7B00B1364D /* Embed Frameworks */ = {
+		38CCC29C23561CFE00EF39BA /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				3D16560D23561D7B00B1364D /* InputBarAccessoryView.framework in Embed Frameworks */,
-				3D16561123561D7D00B1364D /* MessageKit.framework in Embed Frameworks */,
+				38CCC29923561CFE00EF39BA /* MessageKit.framework in Embed Frameworks */,
+				38CCC29B23561CFE00EF39BA /* InputBarAccessoryView.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -39,12 +39,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		3D16560923561D0900B1364D /* InputBarAccessoryView */ = {isa = PBXFileReference; lastKnownFileType = folder; name = InputBarAccessoryView; path = Carthage/Checkouts/InputBarAccessoryView; sourceTree = "<group>"; };
-		3D16560A23561D0900B1364D /* MessageKit */ = {isa = PBXFileReference; lastKnownFileType = folder; name = MessageKit; path = Carthage/Checkouts/MessageKit; sourceTree = "<group>"; };
-		3D16560B23561D7B00B1364D /* InputBarAccessoryView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = InputBarAccessoryView.framework; path = Carthage/Build/iOS/InputBarAccessoryView.framework; sourceTree = "<group>"; };
-		3D16560F23561D7D00B1364D /* MessageKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageKit.framework; path = Carthage/Build/iOS/MessageKit.framework; sourceTree = "<group>"; };
-		3D1656132356275500B1364D /* MessageDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageDetailViewController.swift; sourceTree = "<group>"; };
-		3D165615235627F400B1364D /* Sender+UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sender+UserDefaults.swift"; sourceTree = "<group>"; };
+		38CCC29623561CFE00EF39BA /* MessageKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageKit.framework; path = Carthage/Build/iOS/MessageKit.framework; sourceTree = "<group>"; };
+		38CCC29723561CFE00EF39BA /* InputBarAccessoryView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = InputBarAccessoryView.framework; path = Carthage/Build/iOS/InputBarAccessoryView.framework; sourceTree = "<group>"; };
+		38CCC29E2356275200EF39BA /* MessageDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageDetailViewController.swift; sourceTree = "<group>"; };
+		38CCC2A0235627F500EF39BA /* Sender+UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sender+UserDefaults.swift"; sourceTree = "<group>"; };
 		4612B5C4211AB41100E7FF73 /* Message Board.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Message Board.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4612B5C7211AB41100E7FF73 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4612B5CC211AB41200E7FF73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -62,21 +60,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D16560C23561D7B00B1364D /* InputBarAccessoryView.framework in Frameworks */,
-				3D16561023561D7D00B1364D /* MessageKit.framework in Frameworks */,
+				38CCC29823561CFE00EF39BA /* MessageKit.framework in Frameworks */,
+				38CCC29A23561CFE00EF39BA /* InputBarAccessoryView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3D16560823561D0900B1364D /* Frameworks */ = {
+		38CCC29523561CFE00EF39BA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				3D16560F23561D7D00B1364D /* MessageKit.framework */,
-				3D16560B23561D7B00B1364D /* InputBarAccessoryView.framework */,
-				3D16560923561D0900B1364D /* InputBarAccessoryView */,
-				3D16560A23561D0900B1364D /* MessageKit */,
+				38CCC29723561CFE00EF39BA /* InputBarAccessoryView.framework */,
+				38CCC29623561CFE00EF39BA /* MessageKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -86,7 +82,7 @@
 			children = (
 				4612B5C6211AB41100E7FF73 /* Message Board */,
 				4612B5C5211AB41100E7FF73 /* Products */,
-				3D16560823561D0900B1364D /* Frameworks */,
+				38CCC29523561CFE00EF39BA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -114,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				4612B5D9211AB66600E7FF73 /* MessageThread.swift */,
+				38CCC2A0235627F500EF39BA /* Sender+UserDefaults.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -133,7 +130,6 @@
 				4612B5C7211AB41100E7FF73 /* AppDelegate.swift */,
 				4612B5CE211AB41300E7FF73 /* Assets.xcassets */,
 				4612B5D3211AB41300E7FF73 /* Info.plist */,
-				3D165615235627F400B1364D /* Sender+UserDefaults.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -151,7 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				4643602F211ABC3700E7FF73 /* MessageThreadsTableViewController.swift */,
-				3D1656132356275500B1364D /* MessageDetailViewController.swift */,
+				38CCC29E2356275200EF39BA /* MessageDetailViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -166,8 +162,8 @@
 				4612B5C0211AB41100E7FF73 /* Sources */,
 				4612B5C1211AB41100E7FF73 /* Frameworks */,
 				4612B5C2211AB41100E7FF73 /* Resources */,
-				3D16560E23561D7B00B1364D /* Embed Frameworks */,
-				3D16561223561D8E00B1364D /* ShellScript */,
+				38CCC29C23561CFE00EF39BA /* Embed Frameworks */,
+				38CCC29D23561D2F00EF39BA /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -226,7 +222,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		3D16561223561D8E00B1364D /* ShellScript */ = {
+		38CCC29D23561D2F00EF39BA /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -241,7 +237,7 @@
 			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Carthage/Build/iOS/MessageKit.framework",
-				"$(DERIVED_FILE_DIR)/Carthage/Build/InputBarAccessoryView.framework",
+				"$(DERIVED_FILE_DIR)/Carthage/Build/iOS/InputBarAccessoryView.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -258,9 +254,9 @@
 				4612B5DA211AB66600E7FF73 /* MessageThread.swift in Sources */,
 				4643602A211AB90900E7FF73 /* HTTPMethod.swift in Sources */,
 				46436030211ABC3700E7FF73 /* MessageThreadsTableViewController.swift in Sources */,
-				3D165616235627F400B1364D /* Sender+UserDefaults.swift in Sources */,
+				38CCC2A1235627F500EF39BA /* Sender+UserDefaults.swift in Sources */,
 				4612B5C8211AB41100E7FF73 /* AppDelegate.swift in Sources */,
-				3D1656142356275500B1364D /* MessageDetailViewController.swift in Sources */,
+				38CCC29F2356275200EF39BA /* MessageDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
