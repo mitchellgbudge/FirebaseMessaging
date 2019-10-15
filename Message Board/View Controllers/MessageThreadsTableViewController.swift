@@ -26,6 +26,31 @@ class MessageThreadsTableViewController: UITableViewController {
         }
     }
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        if let currentUserDictionary = UserDefaults.standard.value(forKey: "currentUser") as? [String : String] {
+            let currentUser = Sender(dictionary: currentUserDictionary)
+            messageThreadController.currentUser = currentUser
+        } else {
+            let alert = UIAlertController(title: "Set a username", message: nil, preferredStyle: .alert)
+            var usernameTextField: UITextField!
+            alert.addTextField { (textfield) in
+                textfield.placeholder = "Username:"
+                usernameTextField = textfield
+            }
+            let action = UIAlertAction(title: "Submit", style: .default) { (_) in
+                let displayName = usernameTextField.text ?? "No name"
+                let id = UUID().uuidString
+                let sender = Sender(senderId: id, displayName: displayName)
+                
+                UserDefaults.standard.set(sender.dictionaryRepresentation, forKey: "currentUser")
+                self.messageThreadController.currentUser = sender
+            }
+            alert.addAction(action)
+            present(alert, animated: true, completion: nil)
+        }
+    }
+    
     // MARK: - Actions
     
     @IBAction func createThread(_ sender: Any) {
@@ -61,10 +86,9 @@ class MessageThreadsTableViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "ViewMessageThread" {
             guard let indexPath = tableView.indexPathForSelectedRow,
-                let destinationVC = segue.destination as? MessageThreadDetailTableViewController else { return }
+                let destinationVC = segue.destination as? MessageDetailViewController else { return }
             
-            destinationVC.messageThreadController = messageThreadController
-            destinationVC.messageThread = messageThreadController.messageThreads[indexPath.row]
+            
         }
     }
     

@@ -12,6 +12,7 @@ class MessageThreadController {
     
     static let baseURL = URL(string: "https://lambda-message-board.firebaseio.com/withframeworks")!
     var messageThreads: [MessageThread] = []
+    var currentUser: Sender?
 
     func fetchMessageThreads(completion: @escaping () -> Void) {
         
