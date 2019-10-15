@@ -1,0 +1,19 @@
+{
+  "Mac" : [
+
+  ],
+  "watchOS" : [
+
+  ],
+  "tvOS" : [
+
+  ],
+  "commitish" : "9a7d4b414be9050bf477f52303df8943d0264ec0",
+  "iOS" : [
+    {
+      "name" : "MessageKit",
+      "hash" : "c5281f6405ffae5a503f5789bca31489bcf81e191eeb6cd4a5b3446ce5d3dc20",
+      "swiftToolchainVersion" : "5.1 (swiftlang-1100.0.270.13 clang-1100.0.33.7)"
+    }
+  ]
+}
